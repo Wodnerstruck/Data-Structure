@@ -19,10 +19,10 @@ int main(){
             
             ThisSum+=seq[i];
             Count++;
-            if(ThisSum>MaxSum){
+            if(ThisSum>MaxSum){//>条件可以保证两子列和相等时输出前面的子列，但漏掉了子列只有0最大子列和为0的情况
                 MaxSum=ThisSum;
                 end=seq[i];
-                head=seq[i-Count+1];
+                head=seq[i-Count+1];//得到更大的子列和时一定要更新列首列尾
             }
             else if(ThisSum<0){
                 ThisSum=0,Count=0;
