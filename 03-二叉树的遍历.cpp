@@ -37,7 +37,7 @@ void PostOrderTraversal(BinTree BT)
     }
 }
 //非递归先序遍历
-void InOrderTraversal_(BinTree BT)
+void PreOrderTraversal_(BinTree BT)
 {   
     BinTree T = BT;
     stack <BinTree> S;
